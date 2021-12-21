@@ -81,15 +81,17 @@
         echo "ชื่อ:".$name[4]." "."อายุ:".$age[4]."<br>";
         */
         
-        $color=array("red"=>"100","blue"=>"200","yellow"=>"300","black"=>"400","green"=>"500","pink"=>"600");
+        /*$color=array("red"=>"100","blue"=>"200","yellow"=>"300","black"=>"400","green"=>"500","pink"=>"600");
         //$number=array("100","200","300","400","500","600");
         foreach($color as $colors => $number):
             echo "สี : ".$colors. "=>";
             echo "รหัส : ".$number. "<br>";
         endforeach;
      
+        */
         
         
+
 
 
 
