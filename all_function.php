@@ -26,17 +26,8 @@
                 echo"<hr>";
                 echo"</center>";
             
-            }
+            } 
 
-
-
-
-
-
-
-
-
-        
         ?>
 
 </body>
