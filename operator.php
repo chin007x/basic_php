@@ -16,7 +16,7 @@
 </head>
 <body>
     
-    <h1>การแสดงผมตัวแปรอาร์เรย์แบบวนรอบ</h1>
+  
     <?php
     /*
         $x = 20; 
@@ -90,7 +90,7 @@
      
         */
         
-        function showmesssage()
+        /*function showmesssage()
         {
             echo"<center>";
             echo"<h2>ยินดีต้อนรับสู่เว็บไไซต์ </h2>";
@@ -101,17 +101,35 @@
             echo"</center>";
             
         }
-
-
-
-
-
-
-
-
-
-        
-        ?>
+        */
+        function showmesssage(){
+            echo "<center>";
+            echo "ราคาสินค้าน้อยกว่า 5000 บาท ได้ส่วนลด 3%<br>";
+            echo "ราคาสินค้ามากกว่าหรือเท่ากัน 5000 บาทได้ส่วนลด 5%<br>";
+            echo "</center>"; 
+        }
+        function pomotion ($price){
+            if($price < 5000){
+                $sale = ($price*3)/100;
+                return($sale);
+            }
+        else{
+            $sale = ($price*5)/100;
+            return($sale);
+        }
+    }
+    echo showmesssage();
+    $x = 1000;
+    echo "ราคาสินค้า ".$x."<br>";
+    echo "ส่วนลด : ".pomotion($x). "<br>";
+    echo "ราคาสุทธิ :  ". $x - pomotion($x)."<br>";
+    
+    echo "------------------------------<br>";
+    $y = 5000;
+    echo "ราคาสินค้า" .$y."<br>";
+    echo "ส่วนลด :".pomotion($y). "<br>";
+    echo "ราคาสุทธิ : " . $y - pomotion($y)."<br>";
+    ?>
 
 </body>
 </html>
